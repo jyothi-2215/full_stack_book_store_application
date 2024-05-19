@@ -1,0 +1,169 @@
+.cart-table {
+    display: grid;
+    grid-template-columns: max-content 18em repeat(3, max-content);
+    /*grid-template-columns: 3fr 1fr 1fr; */
+    row-gap: 1em;
+    width: fit-content; /* Change to min-content for better width handling */
+    margin: 0 auto;
+    background-color: #f8f1f5;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ul.cart-bill {
+    display: contents;
+}
+
+ul.cart-bill > li {
+    display: contents;
+}
+
+.table-heading {
+    background-color: #ec9bce;
+    color: white;
+}
+
+.table-heading > * {
+    background-color: #8a2163;
+    padding: 0.5em;
+}
+
+.heading-book {
+    text-align: center;
+    grid-column: 1 /3;
+    font-size:16px;
+    font-weight:bold;
+
+}
+
+.heading-price {
+    grid-column: 3/ 4;
+    text-align: center;
+    font-size:15px;
+    font-weight:bold;
+}
+.heading-quantity{
+    font-size:15px;
+    font-weight:bold;
+    text-align: center;
+}
+
+.heading-subtotal {
+    text-align: center;
+    font-size:15px;
+    font-weight:bold;
+    grid-column: -2 / -1;
+}
+
+.cart-book-image {
+    padding: 0 1em;
+
+}
+
+.cart-book-image > * {
+    margin-left: auto;
+    margin-right: 0;
+
+    padding-bottom: 10px;
+
+}
+
+.cart-bill img {
+    display: block;
+    width: 60px;
+    height:90px;
+    margin-bottom:1px;
+}
+.cart-book-title{
+    font-size:15px;
+    font-family: "Al Bayan";
+    font-weight: bold;
+    color: #8a2163;
+    justify-content: center;
+    text-align: left;
+
+}
+
+.cart-book-price {
+    padding-left: 1em;
+    text-align: right;
+    font-family: "Al Bayan";
+    font-weight: bold;
+    color: #8a2163;
+    justify-content: center;
+}
+
+.cart-book-quantity {
+    padding-left: 1em;
+    padding-right: 1em;
+    font-family: "Al Bayan";
+    color: #8a2163;
+    justify-content: center;
+}
+
+.cart-book-subtotal {
+    text-align: right;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-family: "Al Bayan";
+    font-weight: bold;
+    color: #8a2163;
+
+}
+
+
+
+.icon-button {
+    border: none;
+    cursor: pointer;
+}
+
+.inc-button {
+    font-size: 1.125rem;
+    color: var(--primary-color);
+    margin-right: 0.25em;
+}
+
+.inc-button:hover {
+    color: var(--primary-color-dark);
+}
+
+.dec-button {
+    font-size: 1.125rem;
+    color: #ccc;
+}
+
+.dec-button:hover {
+    color: #aaa;
+}
+
+/* Chevron buttons */
+
+.dec-arrow-button,
+.inc-arrow-button {
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+.dec-arrow-button:hover,
+.inc-arrow-button:hover {
+    color: var(--primary-color-dark);
+}
+
+input[type="number"] {
+    width: 4em;
+}
+
+.row-line {
+    border-bottom: 1px solid black;
+}
+
+.line-sep  {
+    display: block !important;
+    height: 2px !important;
+    background-color: gray !important;
+    grid-column: 1 / -1 !important;
+}
+
+
+
+

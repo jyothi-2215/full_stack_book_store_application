@@ -1,0 +1,66 @@
+.category-buttons {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-color: black;
+    flex: 1;
+    font-size: 16px;
+    font-weight: bold;
+    list-style: none;
+    cursor: pointer;
+}
+
+.category-nav {
+
+    width: 990px; /* Take full width */
+    margin: 20px auto 0; /* Center the nav horizontally and add top margin */
+    display: flex;
+    background-color: black;
+    height: 40px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /*font-family: Italic;*/
+}
+
+.button {
+    padding: 12px 20px; /* Adjust padding for buttons */
+    color: #fff; /* Set default text color */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button.selected-category-button {
+    background-color: #fff;
+    color: #000;
+    padding: 12px 50px;
+    text-decoration: underline;
+    /*font-size:17px;*/
+    /*font-family: Italic;*/
+    /*!*font-family: "BM Dohyeon";*!*/
+}
+
+.button.unselected-category-button,
+.button.unselected-category-button:visited {
+    background-color: black;
+    padding: 12px 50px;
+    color: white;
+    cursor: pointer;
+}
+
+.button.unselected-category-button:hover,
+.button.unselected-category-button:active {
+    padding: 12px 50px;
+    background-color: #ddd;
+    color: black;
+    /*font-family: Arial;*/
+
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 1060px) {
+    .category-nav {
+        padding: 0 20px; /* Add padding to prevent buttons from touching edges */
+    }
+}

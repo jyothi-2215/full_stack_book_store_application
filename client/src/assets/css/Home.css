@@ -1,0 +1,120 @@
+.home-page {
+    background-color: rgb(248,231,242);
+    display:flex;
+    height: 474px;
+    /*width:1100px;*/
+    margin-top:70px;
+    margin-bottom: 70px;
+    margin-left:50px;
+    margin-right:50px;
+    box-sizing: border-box;
+    flex-direction:row;
+}
+
+.main-book{
+    display:flex;
+    border-radius:10px;
+    border-color: black;
+    border-width: 60px;
+    margin-left:230px;
+    margin-top:-14px;
+    margin-bottom:-10px;
+    width:280px;
+    height:506px;
+    border: 2px solid black;
+    outline:5px;
+}
+
+
+.content-main{
+    display:flex;
+    flex-direction:column;
+    width: 600px;
+    margin-left:-20px;
+
+
+}
+
+.first-line{
+    font-family:'Amatic SC';
+    font-size:45px;
+    padding-left:60px;
+    padding-top:80px;
+}
+
+
+.second-line{
+    font-family:'Lobster';
+    font-size:35px;
+    padding-left:60px;
+    padding-top:10px;
+}
+
+.third-line{
+    font-family:'Italianno';
+    font-size:30px;
+    padding-left:60px;
+    padding-top:10px;
+}
+
+.fourth-line{
+    font-family:'Inter';
+    font-size:40px;
+    padding-left:60px;
+    padding-top:10px;
+    color:rgb(173,11,115,88%)
+}
+
+.fifth-line{
+    font-family:'Kadwa';
+    font-size:20px;
+    padding-left:60px;
+    padding-top:10px;
+}
+
+.shop-now{
+    color:black;
+    height:40px;
+    width:200px;
+    font-family: 'Irish Grover';
+    border-width:1px;
+    border-color: black;
+    border-radius:10px;
+    font-size:20px;
+    background-color: yellow;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, font-size 0.3s;
+}
+
+.shop-now:hover {
+    background-color: #6bd018; /* New background color on hover */
+    color: rgb(28, 61, 2); /* New text color on hover */
+    border-color: #ffffff; /* Multi-color border on hover */
+    border-width:4px solid;
+    font-size:23px;
+}
+
+.sixth-line{
+    padding-left:370px;
+    padding-top:10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .home-page {
+        padding: 10px; /* Adjusted padding for smaller screens */
+    }
+
+    .main-book {
+        margin-left: auto; /* Centering the main book horizontally */
+        margin-right: auto;
+    }
+
+    .first-line, .second-line, .third-line, .fourth-line, .fifth-line, .sixth-line {
+        font-size: 1.5em; /* Adjusted font size for smaller screens */
+    }
+
+    .shop-now {
+        width: 150px; /* Adjusted button width for smaller screens */
+    }
+}
+

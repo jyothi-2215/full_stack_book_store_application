@@ -1,0 +1,86 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection) or
+# paste cURL into the file and request will be converted to HTTP Request format.
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+
+
+
+###
+# curl 'http://localhost:3001/JyothiBookstoreReactOrder/api/orders'
+#  -H 'Accept: application/json, text/plain, */*'
+#  -H 'Accept-Language: en-US,en;q=0.9'
+#  -H 'Connection: keep-alive'
+#  -H 'Content-Type: application/json'
+#  -H 'Origin: http://localhost:3001'
+#  -H 'Referer: http://localhost:3001/JyothiBookstoreReactOrder/checkout'
+#  -H 'Sec-Fetch-Dest: empty'
+#  -H 'Sec-Fetch-Mode: cors'
+#  -H 'Sec-Fetch-Site: same-origin'
+#  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
+#  -H 'sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"'
+#  -H 'sec-ch-ua-mobile: ?0'
+#  -H 'sec-ch-ua-platform: "macOS"'
+#  --data-raw '{"customerForm":{"name":"john","address":"12345","phone":"9248791780","email":"someone@gmail.com","ccNumber":"4444333322221111","ccExpiryMonth":0,"ccExpiryYear":2025},"cart":{"itemArray":[{"id":1002,"book":{"bookId":1002,"isPublic":true,"price":4.99,"title":"The Outsider","author":"Stephen King","categoryId":1001},"quantity":1}]}}'
+# curl 'http://localhost:8080/JyothiBookstoreReactOrder/api/orders'
+#  -H 'Accept: application/json, text/plain, */*'
+#  -H 'Accept-Language: en-US,en;q=0.9'
+#  -H 'Connection: keep-alive'
+#  -H 'Content-Type: application/json'
+#  -H 'Origin: http://localhost:3000'
+#  -H 'Referer: http://localhost:3000/'
+#  -H 'Sec-Fetch-Dest: empty'
+#  -H 'Sec-Fetch-Mode: cors'
+#  -H 'Sec-Fetch-Site: same-site'
+#  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
+#  -H 'sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"'
+#  -H 'sec-ch-ua-mobile: ?0'
+#  -H 'sec-ch-ua-platform: "macOS"'
+#  --data-raw '{"customerForm":{"name":"Jyothi Sevakula","address":"809 W Broad St Broaddfalls Apt 318","phone":"5712453473","email":"jyothi2215@vt.edu","ccNumber":"4444333322221111","ccExpiryMonth":0,"ccExpiryYear":2025},"cart":{"itemArray":[{"id":1009,"book":{"bookId":1009,"isPublic":false,"price":8,"title":"Atomic Habits","author":"James Clear","categoryId":1002},"quantity":1}]}}'
+POST http://localhost:8080/JyothiBookstoreReactOrder/api/orders
+Accept: application/json, text/plain, */*
+Accept-Language: en-US,en;q=0.9
+Connection: keep-alive
+Origin: http://localhost:3000
+Referer: http://localhost:3000/
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
+Content-Type: application/json
+
+{
+  "cart": {
+    "itemArray": [
+      {
+        "book": {
+          "bookId": 1002,
+          "title": "The Outsider",
+          "author": "Stephen King",
+          "price": 4,
+          "rating": 5,
+          "isPublic": true,
+          "isFeatured": false,
+          "categoryId": 1001
+        },
+        "quantity": 1
+      }
+    ]
+  },
+  "customerForm": {
+    "name": "Monica",
+    "email": "monica@email.com",
+    "address": "123 Main St",
+    "phone": "408 555 1212",
+    "ccNumber": "4444333322221111",
+    "ccExpiryMonth": 13,
+    "ccExpiryYear": 2024
+  }
+}
+###

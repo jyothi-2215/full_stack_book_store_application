@@ -1,0 +1,173 @@
+.complete-header{
+    display:flex;
+    flex-direction: column;
+    padding-top: 1em;
+    width:100%;
+
+
+}
+.header-top{
+    background-color: rgb(167,61,128);
+    height:15px;
+    width:100%;
+}
+.horizontal-line{
+    background-color: rgb(167,61,128);
+    height:2px;
+    width:100%;
+}
+
+.header-bottom
+{
+    background-color:white;
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.left-section
+{
+    display:flex;
+    flex-direction:row;
+}
+
+.store-name{
+    font-family:'Just Another Hand';
+    font-size:40px;
+    color:rgb(167,61,128);
+    cursor: pointer;
+    padding-top:23px;
+    text-decoration: none;
+}
+
+.middle-section {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    padding-top:30px;
+    position:relative;
+
+}
+
+
+
+.search-toolbar{
+    display:flex;
+    flex:1;
+    height:38px;
+    width:500px;
+    padding-left:20px;
+    font-size:16px;
+    border-width:1px;
+    border-style:solid;
+    border-color:black;
+    box-shadow: inset 3px 3px 3px rgba(0,0,0,0.05);
+    border-radius:40px;
+    margin-bottom:10px;
+    position:relative;
+}
+
+.search-icon {
+    position: absolute;
+    right: 19px;
+    top: 62%;
+    transform: translateY(-50%);
+    color: rgb(53, 51, 51);;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+
+.right-section{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-basis: 500px;
+
+}
+
+
+.cart{
+    margin-right:10px;
+    margin-left:30px;
+    margin-top:10px;
+    position:relative
+}
+
+.cart::before {
+    content: '';
+    position: absolute;
+    top: -12px; /* Adjust as needed */
+    right: -17px; /* Adjust as needed */
+    width: 20px; /* Diameter of the circle */
+    height: 20px; /* Diameter of the circle */
+    background-color: yellow;
+    border-radius: 50%; /* Makes it a circle */
+    z-index: 1; /* Ensure it's above the cart icon */
+}
+
+.cart-button{
+    position:relative;
+    z-index: 2;
+    font-size:20px;
+    background-color:rgb(167,61,128);
+    color:white;
+    border: none;
+    padding: 6px 20px;
+    border-radius:8px;
+}
+
+.cart-number {
+    position: absolute;
+    top: -10px; /* Adjust as needed */
+    right: -18px; /* Adjust as needed */
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    color: black;
+    border-radius: 50%;
+    font-size: 14px; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    font-weight: bold;
+}
+
+
+.login{
+    margin-right:50px;
+    margin-left:30px;
+    margin-top:10px;
+}
+.login-button{
+    font-size:18px;
+    background-color:rgb(167,61,128);
+    color:white;
+    border: none;
+    padding: 6px 20px;
+    border-radius:8px;
+    width:140px;
+    cursor: pointer;
+}
+.login-button:hover{
+    background-color: white;
+    color:rgb(167,61,128);
+    border:1px solid rgb(167,61,128);
+    font-size:19px;
+    font-weight: bold;
+}
+.login-button i{
+    font-size:0.9em;
+    padding-left:5px;
+}
+
+.fa-shopping-cart{
+    color: rgb(167,61,128);
+    margin-right:-20px;
+
+}
+

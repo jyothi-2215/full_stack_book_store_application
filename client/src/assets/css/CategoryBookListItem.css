@@ -1,0 +1,120 @@
+.book-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color:rgba(244, 231, 239, 0.93);
+    padding: 1em;
+    gap: 0.25em;
+    width:auto;
+    min-width:300px;
+    max-width:100%;
+    height:240px;
+    background-color: rgb(249,235,244,42.75%);
+    margin-left:35px;
+    margin-top:10px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+
+
+}
+
+
+.book-image
+{
+    width:120px;
+    height:180px;
+    margin-bottom:30px;
+    position:relative;
+    flex:0 0 auto;
+
+}
+
+.book-price{
+    height:40px;
+    width:248px;
+    color:rgb(173,11,115,88%);
+    text-align: center;
+    font-size:23px;
+    font-weight: bold;
+    margin-top:40px;
+}
+
+.decimal {
+    font-size:20px;
+}
+
+
+
+.book-title {
+    height:auto;
+    width:248px;
+    font-family:'Kadwa';
+    font-size:19px;
+    color:black;
+    text-align: center;
+    font-weight: bold;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+
+.book-author {
+    height:33px;
+    width:248px;
+    font-family:'ui-rounded';
+    font-weight: bold;
+    text-align: center;
+
+}
+.read-now-button {
+    border: none;
+    background: none;
+    padding: 0;
+    position:absolute;
+    top:0px;
+    right:-10px;
+    cursor: pointer;
+
+
+}
+
+.read-now-img {
+    height:40px;
+    width:40px;
+    cursor:pointer;
+
+}
+
+
+
+.add-cart-button{
+    background-color:rgb(96,32,73,100%);
+    height:50px;
+    width:180px;
+    color:white;
+    font-weight: bold;
+    border-radius: 10px;
+    border:2px solid;
+    text-align: center;
+    cursor: pointer;
+    font-size:15px;
+    margin-left:40px;
+    margin-top:20px;
+
+
+}
+
+.add-cart-button:hover{
+    background-color: rgb(10, 0, 7);
+    font-size:17px;
+
+
+}
+
+
+.add-cart-button i{
+    font-size:20px;
+    margin-right:2px;
+    margin-left:2px;
+
+
+}

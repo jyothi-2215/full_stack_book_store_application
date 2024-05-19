@@ -1,0 +1,77 @@
+.cart-info {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 18px;
+    font-family: Arial;
+    margin-bottom: 20px;
+}
+.sub-total{
+    margin-left:56%;
+    margin-top:-30px;
+    font-family:'Arial';
+    font-weight: bold;
+    font-size:20px;
+}
+
+.cart-buttons {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    margin-bottom: 40px; /* Add space between the buttons and the cart table */
+}
+
+.clear-cart{
+    margin-top:1%;
+    margin-left:34%;
+    width:100px;
+}
+.clear-cart:hover{
+    cursor:pointer;
+}
+.checkout-button,
+.continue-shopping{
+    margin-left: 16%; /* Adjust as needed */
+}
+
+.continue-shopping {
+    margin-left: 1%;
+    color:white;
+    height:40px;
+    width:220px;
+    font-family: 'Irish Grover';
+    border-width:1px;
+    border-color: black;
+    border-radius:10px;
+    font-size:20px;
+    background-color: rgb(154, 87, 138);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, font-size 0.3s;
+}
+.continue-shopping:hover {
+    background-color: #48233a;/* New background color on hover */
+    color: rgb(255, 255, 255);/* New text color on hover */
+    border-color: #ffffff; /* Multi-color border on hover */
+    border-width:4px solid;
+    font-size:21px;
+}
+
+.checkout-button{
+        color:black;
+        height:40px;
+        width:220px;
+        font-family: 'Irish Grover';
+        border-width:1px;
+        border-color: black;
+        border-radius:10px;
+        font-size:20px;
+        background-color: yellow;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s, border-color 0.3s, font-size 0.3s;
+    }
+.checkout-button:hover {
+        background-color: #52de52;/* New background color on hover */
+        color: rgb(24, 49, 4); /* New text color on hover */
+        border-color: #ffffff; /* Multi-color border on hover */
+        border-width:4px solid;
+        font-size:21px;
+}
+
